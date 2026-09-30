@@ -16,26 +16,19 @@ required.
 The following algorithms are implemented in this unit:
 
 Iterative Binary Search
-
 Recursive Binary Search
-
 Merge Sort
-
 Quick Sort
-
 Recursive Bubble Sort
-
 Recursive Insertion Sort
 
 3. Iterative Binary Search
 
 Problem Statement
-
 Given a sorted array and a target value, find the position of the target
 element using Binary Search without recursion.
 
 Algorithm / Approach
-
 Binary Search repeatedly divides the search range into two halves. The
 middle element is compared with the target. If the target is larger, the
 left boundary is moved to the right half; otherwise, the right boundary
@@ -63,10 +56,10 @@ BINARY_SEARCH(array, target)
 
     RETURN -1
 
+
 Complexity Analysis
 
 Case           Time Complexity
-
 Best Case      O(1)
 Average Case   O(log n)
 Worst Case     O(log n)
@@ -74,24 +67,19 @@ Worst Case     O(log n)
 Space Complexity: O(1)
 
 Sample Input
-
 Array: 10 20 30 40 50 60 70
-
 Target: 40
 
 Sample Output
-
 Element found at index: 3
 
 4. Recursive Binary Search
 
 Problem Statement
-
 Given a sorted array and a target value, find the position of the target
 element using Binary Search recursively.
 
 Algorithm / Approach
-
 The array is divided into two halves at every recursive call. The middle
 element is compared with the target, and only the half that can contain
 the target is searched further.
@@ -116,7 +104,6 @@ RECURSIVE_BINARY_SEARCH(array, left, right, target)
 Complexity Analysis
 
 Case           Time Complexity
-
 Best Case      O(1)
 Average Case   O(log n)
 Worst Case     O(log n)
@@ -124,23 +111,18 @@ Worst Case     O(log n)
 Space Complexity: O(log n) due to the recursive call stack.
 
 Sample Input
-
 Array: 10 20 30 40 50 60 70
-
 Target: 40
 
 Sample Output
-
 Element found at index: 3
 
 5. Merge Sort
 
 Problem Statement
-
 Sort the given array in ascending order using the Merge Sort algorithm.
 
 Algorithm / Approach
-
 Merge Sort follows the Divide and Conquer approach. The array is
 repeatedly divided into two halves until single-element subarrays are
 obtained. The sorted subarrays are then merged to produce the final
@@ -163,7 +145,6 @@ MERGE_SORT(array, left, right)
 Complexity Analysis
 
 Case           Time Complexity
-
 Best Case      O(n log n)
 Average Case   O(n log n)
 Worst Case     O(n log n)
@@ -171,26 +152,21 @@ Worst Case     O(n log n)
 Space Complexity: O(n)
 
 Sample Input
-
 38 27 43 3 9 82 10
 
 Sample Output
-
 3 9 10 27 38 43 82
 
 6. Quick Sort
 
 Problem Statement
-
 Sort the given array in ascending order using the Quick Sort algorithm.
 
 Algorithm / Approach
-
 Quick Sort selects a pivot element and partitions the array so that
 elements smaller than the pivot are placed before it and larger elements
 are placed after it. The two resulting parts are then sorted
 recursively.
-
 The implementation in this unit uses the last element as the pivot.
 
 Pseudocode
@@ -208,7 +184,6 @@ QUICK_SORT(array, low, high)
 Complexity Analysis
 
 Case           Time Complexity
-
 Best Case      O(n log n)
 Average Case   O(n log n)
 Worst Case     O(n²)
@@ -217,26 +192,21 @@ Space Complexity: O(log n) on average due to recursion, and O(n) in the
 worst case.
 
 Sample Input
-
 10 7 8 9 1 5
 
 Sample Output
-
 1 5 7 8 9 10
 
 7. Recursive Bubble Sort
 
 Problem Statement
-
 Sort an array in ascending order using a recursive version of the Bubble
 Sort algorithm.
 
 Algorithm / Approach
-
 One complete Bubble Sort pass moves the largest element of the current
 unsorted portion to the end. The algorithm then recursively sorts the
 remaining portion of the array.
-
 The implementation also stops early if no swapping occurs during a pass.
 
 Pseudocode
@@ -262,7 +232,6 @@ RECURSIVE_BUBBLE_SORT(array, n)
 Complexity Analysis
 
 Case           Time Complexity
-
 Best Case      O(n)
 Average Case   O(n²)
 Worst Case     O(n²)
@@ -270,22 +239,18 @@ Worst Case     O(n²)
 Space Complexity: O(n) due to the recursive call stack.
 
 Sample Input
-
 64 34 25 12 22 11 90
 
 Sample Output
-
 11 12 22 25 34 64 90
 
 8. Recursive Insertion Sort
 
 Problem Statement
-
 Sort an array in ascending order using a recursive version of the
 Insertion Sort algorithm.
 
 Algorithm / Approach
-
 The algorithm recursively sorts the first n - 1 elements. It then
 takes the last element and inserts it into its correct position in the
 already sorted portion.
@@ -312,7 +277,6 @@ RECURSIVE_INSERTION_SORT(array, n)
 Complexity Analysis
 
 Case           Time Complexity
-
 Best Case      O(n)
 Average Case   O(n²)
 Worst Case     O(n²)
@@ -320,12 +284,11 @@ Worst Case     O(n²)
 Space Complexity: O(n) due to the recursive call stack.
 
 Sample Input
-
 12 11 13 5 6
 
 Sample Output
-
 5 6 11 12 13
+
 
 9. Comparison of Algorithms
 
@@ -341,32 +304,23 @@ Recursive Insertion Sort   O(n)         O(n²)          O(n²)        O(n)
 *Quick Sort uses O(log n) auxiliary stack space on average and can
 require O(n) stack space in the worst case.
 
+
 10. Learning Outcomes
 
 After completing this unit, the following concepts were studied:
 
 Understanding the Divide and Conquer approach.
-
 Understanding recursive problem solving.
-
 Implementation of Binary Search using iterative and recursive
 approaches.
-
 Implementation of Merge Sort.
-
 Implementation of Quick Sort.
-
 Understanding partitioning and pivot selection in Quick Sort.
-
 Converting iterative sorting algorithms into recursive
 implementations.
-
 Understanding recursion and the call stack.
-
 Comparing time and space complexity.
-
 Understanding best, average, and worst-case complexity.
-
 Implementing algorithms using C++.
 
 11. Files in This Unit
